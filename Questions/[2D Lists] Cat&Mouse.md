@@ -54,7 +54,7 @@ move_cat_head("down")  # Moves the cat up by one cell
 Write a function `move_mice()` that moves each mouse randomly by one tile per turn.
 
 - For each mouse, choose a random adjacent cell (up, down, left, right) to move into.
-- Ensure mice don’t move outside the grid or onto other mice.
+- Ensure mice don’t move outside the grid, onto other mice or the cat's tail.
 - If a mouse moves into the cat’s head, the mouse is "caught" and removed from the grid.
 
 ---
