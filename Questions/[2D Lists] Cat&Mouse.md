@@ -81,7 +81,7 @@ else:
 ### **Task 1.5: Game Loop and User Input**
 
 Write the main game loop to:
-- Display the grid after each turn replacing the (`","`) with (`"|"`).
+- Display the grid after each turn replacing the (`","`) with (`"|"`). Don't show the list brackets too.
 - Accept user input for the cat’s movements.
 - Update the cat’s and mice’s positions based on user input and random movements, respectively.
 - If moving outside of the grid, does not count as 1 move.
