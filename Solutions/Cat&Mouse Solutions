@@ -1,1 +1,33 @@
+import random
+
+# Creating a 6 by 6 grid where each cell is initially an empty list
+grid = [[[] for _ in range(6)] for _ in range(6)]
+
+# Define head and tail for the cat
+head = 'H'
+tail = 'T'
+
+# Defining a mouse
+mouse = 'x'
+
+# Append head to the cell at position [0, 1]
+grid[0][1].append(head)
+
+# Append tail to position at [0,0]
+grid[0][0].append(tail)
+
+# Randomly placing 3 mice on the grid
+mouse_positions = set()
+while len(mouse_positions) < 3:
+    x, y = random.randint(0, 5), random.randint(0, 5)
+    # Ensure the mouse does not overlap with the cat's head or tail
+    if not grid[x][y]:  # Check if cell is empty
+        grid[x][y].append(mouse)
+        mouse_positions.add((x, y))
+
+# Print the grid in a readable format (with empty cells represented by '__')
+print("\nGrid Layout:")
+for row in grid:
+    row_str = '|| ' + ' | '.join(cell[0] if cell else '__' for cell in row) + ' ||'
+    print(row_str)
 
