@@ -4,11 +4,11 @@ Here’s the Cat and Mouse game structured in GitHub-flavored Markdown format:
 
 # Cat and Mouse Game
 
-In this game, you are a **cat** represented by two adjacent cells labeled "X" (one for the head, one for the tail) on a **10x10 grid**. Your objective is to catch all **5 mice** on the grid. The mice move randomly, while you control the cat using directional commands.
+In this game, you are a **cat** represented by two adjacent cells labeled "X" (one for the head, one for the tail) on a **6x6 grid**. Your objective is to catch all **5 mice** on the grid. The mice move randomly, while you control the cat using directional commands.
 
-**Winning Condition**: Catch all mice within 40 moves.
+**Winning Condition**: Catch all mice within 20 moves.
 
-**Losing Condition**: Fail to catch all mice within 40 moves.
+**Losing Condition**: Fail to catch all mice within 20 moves.
 
 ---
 
@@ -16,10 +16,10 @@ In this game, you are a **cat** represented by two adjacent cells labeled "X" (o
 
 ### **Task 1.1: Setting Up the Game Grid**
 
-Write a function `initialize_grid()` to set up the initial 10x10 game grid.
+Write a function `initialize_grid()` to set up the initial 6 by 6 game grid.
 
-- The grid should be represented as a 2D list, with empty spaces filled by a placeholder (e.g., `"-"`).
-- Place the cat's head (`"X"`) and tail (also `"X"`) on two adjacent cells near the center of the grid.
+- The grid should be represented as a 2D list, with empty spaces filled by a placeholder: "_".
+- Place the cat's head (`"H"`) and tail (`"T"`) on two adjacent cells near the center of the grid.
 - Place the 5 mice (`"M"`) randomly on the grid, ensuring they don’t overlap with each other or the cat.
 
 **Example Output**:
