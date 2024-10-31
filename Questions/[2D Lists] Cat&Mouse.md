@@ -41,6 +41,7 @@ Write a function `move_cat_head(direction)` and 'move_cat_tail(direction)' contr
 - Move the cat’s head then the tail in the chosen direction, ensuring they stay adjacent.
 - Prevent the cat from moving outside the grid boundaries.
 - Update the grid to reflect the new positions of the cat’s head and tail.
+- A head and tail movement only counts as 1 move.
 
 **Example**:
 ```python
@@ -81,8 +82,9 @@ else:
 
 Write the main game loop to:
 - Display the grid after each turn replacing the (`","`) with (`"|"`).
-- Accept user input for the cat’s movement.
+- Accept user input for the cat’s movements.
 - Update the cat’s and mice’s positions based on user input and random movements, respectively.
+- If moving outside of the grid, does not count as 1 move.
 - Track the number of moves left, showing it to the user.
 - End the game if a win or loss condition is met.
 
