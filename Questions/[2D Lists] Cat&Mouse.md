@@ -35,18 +35,22 @@ Write a function `initialize_grid()` to set up the initial 6 by 6 game grid.
 
 The cat is special with its head and tail moving separately.
 
-Write a function `move_cat_head(grid, head_pos, direction)`, where head_pos is (x, y) coordinates of the cat's head, and 'move_cat_tail(grid, head_pos, tail_pos)' control the cat's movement based on user input.
+Write a function `move_cat(grid, head_pos, tail_pos, direction)`, where head_pos is (x, y) coordinates of the cat's head, and 'move_cat_tail(grid, head_pos, tail_pos, direction)' control the cat's movement based on user input.
 
-- Accept one of four directions: "up", "down", "left", "right", "ldu"(left diagonal upwards), "rdu"(right diagonal upwards), "ldd"(left diagonal downwards), "rdd"(right diagonal downwards)
-- Move the cat’s head then the tail in the chosen direction, ensuring they stay adjacent.
-- Prevent the cat from moving outside the grid boundaries.
+- The direction would accept these criteria: "up", "down", "left", "right", "ldu"(left diagonal upwards), "rdu"(right diagonal upwards), "ldd"(left diagonal downwards), "rdd"(right diagonal downwards)
+- Move the cat’s head and the tail in the chosen direction
+- Move the tail in a box grid around the head, ensuring they stay adjacent.This does not count as a move and is optional to the user.
+- Prevent the cat (head or tail) from moving outside the grid boundaries.
+- If the cat head is going out,it would remain at its position, tail would still move in that direction if possible.
 - Update the grid to reflect the new positions of the cat’s head and tail.
-- A head and tail movement only counts as 1 move.
 
 **Example**:
 ```python
-move_cat_head("down")  # Moves the cat up by one cell
+move_cat("down")  # Moves the cat down by one cell
+move_cat_tail("up") # Moves the tail up by one cell
 ```
+
+Write another function where the position of the head or tail is swapped. This takes up 1 move too.
 
 ---
 
@@ -81,10 +85,9 @@ else:
 ### **Task 1.5: Game Loop and User Input**
 
 Write the main game loop to:
-- Display the grid after each turn replacing the (`","`) with (`"|"`). Don't show the list brackets too.
+- Display the grid after each input by user replacing the (`","`) with (`"|"`). Don't show the list brackets too.
 - Accept user input for the cat’s movements.
+- Ask them whether they want to move the tail then ask whether they want to turn around(swap head and tail position), and act accordingly.
 - Update the cat’s and mice’s positions based on user input and random movements, respectively.
 - Track the number of moves left, showing it to the user.
 - End the game if a win or loss condition is met.
-
-
