@@ -1,5 +1,3 @@
-Here’s the Cat and Mouse game structured in GitHub-flavored Markdown format:
-
 ---
 
 # Cat and Mouse Game
