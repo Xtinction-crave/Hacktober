@@ -78,10 +78,10 @@ else:
 ### **Task 1.5: Game Loop and User Input**
 
 Write the main game loop to:
-- Display the grid after each turn.
+- Display the grid after each turn replacing the (`","`) with (`"|"`).
 - Accept user input for the cat’s movement.
 - Update the cat’s and mice’s positions based on user input and random movements, respectively.
-- Track the number of moves left.
+- Track the number of moves left, showing it to the user.
 - End the game if a win or loss condition is met.
 
 
