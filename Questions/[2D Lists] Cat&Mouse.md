@@ -31,7 +31,7 @@ Write a function `initialize_grid()` to set up the initial 6 by 6 game grid.
 
 ---
 
-### **Task 2: Moving the Cat**
+### **Task 1.2: Moving the Cat**
 
 Write a function `move_cat(direction)` to control the cat's movement based on user input.
 
@@ -47,7 +47,7 @@ move_cat("up")  # Moves the cat up by one cell
 
 ---
 
-### **Task 3: Moving the Mice**
+### **Task 1.3: Moving the Mice**
 
 Write a function `move_mice()` that moves each mouse randomly by one tile per turn.
 
@@ -57,7 +57,7 @@ Write a function `move_mice()` that moves each mouse randomly by one tile per tu
 
 ---
 
-### **Task 4: Checking for Wins and Losses**
+### **Task 1.4: Checking for Wins and Losses**
 
 Write a function `check_game_status(moves_left, mice_left)` to evaluate the game's win/loss conditions.
 
@@ -75,7 +75,7 @@ else:
 
 ---
 
-### **Task 5: Game Loop and User Input**
+### **Task 1.5: Game Loop and User Input**
 
 Write the main game loop to:
 - Display the grid after each turn.
