@@ -14,7 +14,7 @@ In this game, you are a **cat** represented by two adjacent cells labeled "X" (o
 
 ## Task Breakdown
 
-### **Task 1: Setting Up the Game Grid**
+### **Task 1.1: Setting Up the Game Grid**
 
 Write a function `initialize_grid()` to set up the initial 10x10 game grid.
 
