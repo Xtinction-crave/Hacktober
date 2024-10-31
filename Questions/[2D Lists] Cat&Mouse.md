@@ -33,16 +33,18 @@ Write a function `initialize_grid()` to set up the initial 6 by 6 game grid.
 
 ### **Task 1.2: Moving the Cat**
 
-Write a function `move_cat(direction)` to control the cat's movement based on user input.
+The cat is special with its head and tail moving separately.
 
-- Accept one of four directions: "up", "down", "left", or "right".
-- Move the cat’s head and tail in the chosen direction, ensuring they stay adjacent.
+Write a function `move_cat_head(direction)` and 'move_cat_tail(direction)' control the cat's movement based on user input.
+
+- Accept one of four directions: "up", "down", "left", "right", "ldu"(left diagonal upwards), "rdu"(right diagonal upwards), "ldd"(left diagonal downwards), "rdd"(right diagonal downwards)
+- Move the cat’s head then the tail in the chosen direction, ensuring they stay adjacent.
 - Prevent the cat from moving outside the grid boundaries.
 - Update the grid to reflect the new positions of the cat’s head and tail.
 
 **Example**:
 ```python
-move_cat("up")  # Moves the cat up by one cell
+move_cat_head("down")  # Moves the cat up by one cell
 ```
 
 ---
