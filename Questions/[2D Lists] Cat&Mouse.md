@@ -84,7 +84,6 @@ Write the main game loop to:
 - Display the grid after each turn replacing the (`","`) with (`"|"`). Don't show the list brackets too.
 - Accept user input for the cat’s movements.
 - Update the cat’s and mice’s positions based on user input and random movements, respectively.
-- If moving outside of the grid, does not count as 1 move.
 - Track the number of moves left, showing it to the user.
 - End the game if a win or loss condition is met.
 
