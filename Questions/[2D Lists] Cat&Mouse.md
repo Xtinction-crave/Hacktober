@@ -14,12 +14,12 @@ In this game, you are a **cat** represented by two adjacent cells labeled "X" (o
 
 ## Task Breakdown
 
-### **Task 1.1: Setting Up the Game Grid**
+### **Task 1.1: Setting Up the Game Grid with Cat and Mouse**
 
 Write a function `initialize_grid()` to set up the initial 6 by 6 game grid.
 
-- The grid should be represented as a 2D list, with empty spaces filled by a placeholder: "_".
-- Place the cat's head (`"H"`) and tail (`"T"`) on two adjacent cells near the center of the grid.
+- The grid should be represented as a 2D list, with empty spaces filled by a placeholder (`"_"`).
+- Place the cat's head (`"H"`) and tail (`"T"`) on two adjacent cells at the top left hand corner of the grid.
 - Place the 5 mice (`"M"`) randomly on the grid, ensuring they don’t overlap with each other or the cat.
 
 **Example Output**:
