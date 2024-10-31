@@ -20,7 +20,7 @@ Write a function `initialize_grid()` to set up the initial 6 by 6 game grid.
 
 **Example Output**:
 ```python
-[['H', 'T', '_', 'M', '_', '_'],
+[['T', 'H', '_', 'M', '_', '_'],
  ['_', '_', '_', '_', 'M', '_'],
  ['_', 'M', '_', '_', '_', '_'],
  ['_', '_', '_', '_', '_', '_'],
