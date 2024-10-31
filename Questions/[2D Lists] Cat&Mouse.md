@@ -1,5 +1,3 @@
----
-
 # Cat and Mouse Game
 
 In this game, you are a **cat** represented by two adjacent cells labeled "X" (one for the head, one for the tail) on a **6x6 grid**. Your objective is to catch all **5 mice** on the grid. The mice move randomly, while you control the cat using directional commands.
